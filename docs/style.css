@@ -1,73 +1,67 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-::-webkit-scrollbar {
-  display: none;
+html,body{
+  width:100%;
+  margin:0;
+  padding:0;
 }
-
-.container {
+.container{
+  margin:0;
+  padding:2rem;
+  background-color:rgb(30,30,30);
+  font-family:Roboto,arial,sans-serif;
+  font-weight:300;
+  letter-spacing:0.1rem;
+}
+.color-container{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  position:relative;
+  width:100%;
+  margin-bottom:-1rem;
+  -webkit-box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.75);
+}
+.color{
+  height:10vh;
+  transition:all 0.2s ease;
+}
+.color:hover{
+  transform:scale(1.05);
+  cursor:pointer;
+}
+.copy-text{
+  color: white;
+  background-color:rgba(0,0,0,0.3);
+  width:36rem;
+  padding:0.5rem;
+  text-align:center;
+  border-radius:1rem;
+  margin:0 auto;
+  position:relative;
+  top:-5vh;
+  font-size:1.2rem;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.45);
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.45);
+  transition:all 0.3s;
+}
+.copy-text:hover{
+  cursor:pointer;
+  background-color:rgba(0,0,0,0.8);
+}
+.copied-alert{
   width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(30, 30, 30);
-  font-family: Roboto, arial, sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-}
-
-.color-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  position: relative;
-  margin-bottom: -1rem;
-  -webkit-box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.75);
-}
-
-.color {
-  height: 20vh;
-  transition: all 0.5s ease;
-}
-
-.color:hover {
-  transform: scale(1.05);
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-.copy-text {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 36rem;
-  padding: 0.5rem;
-  text-align: center;
-  border-radius: 1rem;
-  margin: 0 auto;
-  position: relative;
-  top: -5vh;
-  font-size: 1.2rem;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
-  transition: all 0.3s;
-}
-
-.copy-text:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.copied-alert {
-  width: 100vw;
-  height: 20vh;
-  color: white;
-  background-color: rgba(50, 180, 90, 0.9);
-  position: absolute;
-  z-index: 50;
-  opacity: 0;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  overflow: hidden;
+  height:10vh;
+  color:white;
+  background-color:rgba(50,180,90,0.9);
+  position:absolute;
+  z-index:50;
+  opacity:0;
+  transition:all 0.5s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:3rem;
+  overflow:hidden;
 }
