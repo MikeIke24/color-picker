@@ -76,7 +76,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  overflow: hidden;
 }
 .copied-alert-color {
   width: 100%;
